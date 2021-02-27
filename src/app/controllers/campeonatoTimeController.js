@@ -1,4 +1,4 @@
-import CampeonatoTime from '../models/CampeonatoTime-time';
+import CampeonatoTime from '../models/campeonato-time';
 
 class CampeonatoTimeController{
     async index(req, res) {
@@ -76,4 +76,4 @@ class CampeonatoTimeController{
     } 
 }
 
-export default new CampeonatoTimeTimeController();
+export default new CampeonatoTimeController();

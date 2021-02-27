@@ -21,14 +21,14 @@ class MarcadorController {
     async store(req, res) {
         let { partida_id,player,tempo } = req.body;
 
-        let player = await Marcador.create({
+        let marcador = await Marcador.create({
             partida_id,
             player,
             tempo,
             created_at: new Date(),
         });
 
-        return res.json(player);
+        return res.json(marcador);
     }
 
     /*async update(req, res) {
